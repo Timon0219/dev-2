@@ -10,7 +10,7 @@ const Landing: NextPage = () => {
     <div className="relative min-h-screen overflow-x-hidden font-mono">
       <div className="layout">
         <Head>
-          <title>Portfolio - Chandraprakash Darji</title>
+          <title>Portfolio - Joiner David Cantillo Camargo</title>
         </Head>
         <Navbar />
         <main>

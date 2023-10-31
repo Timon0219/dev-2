@@ -1,7 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import Script from 'next/script';
 import { ReactElement } from 'react';
-import { GA_TRACKING_ID } from '../lib/helper/gtag';
 
 class MyDocument extends Document {
   render(): ReactElement {
@@ -37,7 +36,7 @@ class MyDocument extends Document {
           <meta property="twitter:url" />
           <meta
             property="twitter:title"
-            content="Portfolio - Chandraprakash Darji"
+            content="Portfolio - Joiner David Cantillo Camargo"
           />
           <meta
             property="twitter:description"
@@ -64,7 +63,7 @@ class MyDocument extends Document {
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <Script
             strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${}`}
           />
           <Script
             id="ga-script"
@@ -74,7 +73,7 @@ class MyDocument extends Document {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${GA_TRACKING_ID}', {
+              gtag('config', '${}', {
                 page_path: window.location.pathname,
               });
           `,
